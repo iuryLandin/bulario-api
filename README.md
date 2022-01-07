@@ -4,9 +4,15 @@ Essa API realiza uma pesquisa de bulas de medicamentos, foi utilizado uma biblio
 
 - Biblioteca utilizada: https://github.com/iuryLandin/bulario
 
-No presente momento a ANVISA / Governo Brasileiro não disponibiliza alguns dados para serem utilizados por programadores e pesquisadores. Sendo assim, utilizando técnicas de WebCrawler é realizada a busca desses dados.
+> No presente momento a ANVISA / Governo Brasileiro não disponibiliza alguns dados para serem utilizados por programadores e pesquisadores. Sendo assim, utilizando técnicas de WebCrawler é realizada a busca desses dados.
 
 URL base da API: `https://bula.vercel.app/`
+
+## Documentação
+
+Documentação Online: https://bula.vercel.app/docs
+
+> Dentro da pasta `docs` possui o arquivo `insomnia.json`, você poderá importar dentro do software `insomnia` e testar as rotas
 
 ## Funcionalidades
 - Pesquisar medicamentos (busca simples pelo nome)
@@ -25,15 +31,9 @@ Obs.: As funcionalidades são limitadas pois no momento é o que o portal da anv
 - Vercel - Serverless
 
 
-Fiz dessa API como um projeto de estudos para entender mais sobre as Serverless functions, caso você não saiba o que é, vou deixar um link de um artigo que achei legal, ele está em pt-br.
-
-https://serverless-stack.com/chapters/pt/what-is-serverless.html
-
-## Documentação
-
-Para facilitar o consumo, na raiz do projeto possui um arquivo `Insomnia.json` que poderá ser importado no Software Insomnia
-
-_Futuramente estarei criando uma documentação mais profissional no swagger_
+> Fiz dessa API como um projeto de estudos para entender mais sobre as Serverless functions, caso você não saiba o que é, vou deixar um link de um artigo que achei legal, ele está em pt-br.
+>
+> https://serverless-stack.com/chapters/pt/what-is-serverless.html
 
 ----
 Caso tenha dúvidas ou sugestões para API ou Biblioteca, entre em contato comigo através das seguintes redes sociais:
@@ -91,6 +91,7 @@ Definição dos Parâmetros:
 ATENÇÃO: O id que será passado por parâmetro é uma hash que é adquirida na pesquisa ou no retorno do medicamento. O nome dessa hash é: `idBulaPacienteProtegido` e `idBulaProfissionalProtegido`
 
 
+> Veja a documentação completa aqui: https://bula.vercel.app/docs
 
 ### Até mais!!!
 

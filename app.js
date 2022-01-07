@@ -14,8 +14,13 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(helmet());
-app.use('/', routes);
 
+app.use('/', express.static(__dirname + '/docs'));
+app.get('/docs', function (req, res) {
+    res.sendFile(__dirname + '/docs/index.html');
+});
+
+app.use('/', routes);
 
 if (process.env.ENVIRONMENT == 'dev')
     app.listen(process.env.PORT, () => console.log(`\n> Executando API na porta: ${process.env.PORT} \n`))
