@@ -26,6 +26,19 @@ routes.get('/pesquisar', async (req, res, next) => {
     }
 });
 
+routes.get('/pesquisar/v2', async (req, res, next) => {
+
+    try {
+        const nome = req.query.nome;
+        const pagina = req.query.pagina || 1;
+        const count = req.query.counte || 4;
+        const bula = await BulaController.buscarV2(nome, pagina, count)
+        return res.status(200).json(bula);
+    } catch (error) {
+        next(new AppError(error))
+    }
+});
+
 routes.post('/filtrar', async (req, res, next) => {
 
     try {

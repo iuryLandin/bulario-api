@@ -10,6 +10,15 @@ const buscar = async (nome, pagina = 1) => {
     }
 };
 
+const buscarV2 = async (nome, pagina = 1, count = 4) => {
+    try {
+        const result = await bulario.buscaFull(nome, pagina, count)
+        return result;
+    } catch (error) {
+        throw new AppError(error)
+    }
+};
+
 const filtrar = async (filtro, pagina = 1) => {
     try {
         const result = await bulario.filtrar(filtro, pagina)
@@ -60,4 +69,4 @@ const getPdf = async (id) => {
     }
 };
 
-module.exports = { buscar, filtrar, getByNum, listaCategorias, getByCat, getLink, getPdf };
+module.exports = { buscar, buscarV2, filtrar, getByNum, listaCategorias, getByCat, getLink, getPdf };
