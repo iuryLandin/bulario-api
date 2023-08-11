@@ -2,6 +2,14 @@
 
 Essa API realiza uma pesquisa de bulas de medicamentos, foi utilizado uma biblioteca que eu também criei que por sua vez realiza a busca no portal da ANVISA
 
+---
+API eclusiva para testes e trabalhos acadêmicos;
+Para versão comercial, entre em contato comigo através das minhas redes.
+
+___Esta API não foi feita para fins comerciais, pois pode conter bugs e indisponibilidades devido o servidor ser grátis e de uso limitado!___
+
+---
+
 - Biblioteca utilizada: https://github.com/iuryLandin/bulario
 
 > No presente momento a ANVISA / Governo Brasileiro não disponibiliza alguns dados para serem utilizados por programadores e pesquisadores. Sendo assim, utilizando técnicas de WebCrawler é realizada a busca desses dados.
