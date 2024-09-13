@@ -14,13 +14,13 @@ ___Esta API não foi feita para fins comerciais, pois pode conter bugs e indispo
 
 > No presente momento a ANVISA / Governo Brasileiro não disponibiliza alguns dados para serem utilizados por programadores e pesquisadores. Sendo assim, utilizando técnicas de WebCrawler é realizada a busca desses dados.
 
-URL base da API: `https://bula.vercel.app/`
 
 ## Documentação
 
-Documentação Online: https://bula.vercel.app/docs
-
 > Dentro da pasta `docs` possui o arquivo `insomnia.json`, você poderá importar dentro do software `insomnia` e testar as rotas
+
+___Eu removi a API online pois estavam utilizando para "minerar" as bulas e assim consumindo todo o recurso gratis do servidor e outras pessoas que queriam testar não conseguiam!___
+
 
 ## Funcionalidades
 - Pesquisar medicamentos (busca simples pelo nome)
