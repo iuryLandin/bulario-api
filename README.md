@@ -99,8 +99,6 @@ Definição dos Parâmetros:
 ATENÇÃO: O id que será passado por parâmetro é uma hash que é adquirida na pesquisa ou no retorno do medicamento. O nome dessa hash é: `idBulaPacienteProtegido` e `idBulaProfissionalProtegido`
 
 
-> Veja a documentação completa aqui: https://bula.vercel.app/docs
-
 ### Até mais!!!
 
 ----
